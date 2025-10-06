@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Fairytale — A Storybook</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Book cover (acts as button) -->
+  <div class="cover-screen" id="cover-screen">
+    <div class="cover-content">
+      <h1 class="cover-title">The Book I Want to Write Forever</h1>
+      <p class="cover-sub">Tap the book to begin our story 💕</p>
+      <button id="start-btn" class="start-btn">Open the Book</button>
+    </div>
+  </div>
+
+  <div class="page-wrap hidden">
+    <header class="header hidden">
+      <h1 class="title">Our Fairytale</h1>
+      <button id="music-toggle" aria-label="Play music" class="music-btn">♪</button>
+    </header>
+
+    <main class="book-scene hidden">
+      <div class="book" id="book" aria-live="polite">
+        <!-- Chapter 1 -->
+        <article class="page page-1" data-chapter="1">
+          <h2>Chapter 1 Once Upon a Swipe</h2>
+          <p>Once upon a time, in a world full of strangers and fleeting faces, I stumbled upon someone who seemed unreal. She appeared on my screen like a star falling out of the sky , beautiful, radiant, and so far out of my league that I almost laughed at the thought of her ever noticing me.</p>
+          <p>When she complimented me, I didn’t even believe it. I thought she must be teasing, because how could someone so breathtakingly beautiful see something in me? But she wasn’t joking… she was real. And from that simple moment, a spark was born.</p>
+        </article>
+
+        <!-- Chapter 2 -->
+        <article class="page page-2" data-chapter="2">
+          <h2>Chapter 2 — The First Magic</h2>
+          <p>Her beauty was undeniable , her hair that could captivate me, her lips I could imagine smiling, her eyes that carried galaxies. But what truly made me fall was her heart. Her honesty, her openness, her way of speaking without masks or games.</p>
+          <p>I still remember the first time I made a nervous, stupid joke, and instead of ignoring it, she laughed louder than I ever expected , that ‘HAHAHAHAHAH’ still echoes in my heart. And then she called me cute. That was the first time I realized: maybe, just maybe, I wasn’t invisible to her. Maybe my weirdness had finally found its match.</p>
+        </article>
+
+        <!-- Chapter 3 -->
+        <article class="page page-3" data-chapter="3">
+          <h2>Chapter 3 — The Little Things</h2>
+          <p>Love isn’t always built from grand gestures. Sometimes, it’s the little things that mean the most.It’s when she calls me baby, honey, love. It’s when she tells me what she’s doing, sharing parts of her day with me, even when she doesn’t usually talk a lot. It’s the effort she makes, the way she shows me that I matter, even in silence.</p>
+          <p>Every nickname, every update, every tiny piece of herself she gives me is worth more than all the treasures in the world. And those small things… they stay with me, they keep me warm when I miss her the most.</p>
+        </article>
+
+        <!-- Chapter 4 -->
+        <article class="page page-4" data-chapter="4">
+          <h2>Chapter 4 — Miles Between Us, Hearts Together</h2>
+          <p>Yes, we are far apart. We don’t walk the same streets, we don’t sit under the same sky every day. Our love has been written in texts and words carried across invisible lines. But even in distance, she feels close , closer than anyone has ever been.</p>
+          <p>Each message from her is like a heartbeat, reminding me I am not alone. When I whisper te quiero, mi amor, I imagine the words traveling to her, wrapping around her like a hug. We may not have held hands yet, but in my heart, I’m holding her every second.</p>
+        </article>
+        <!-- Chapter 5 -->
+<article class="page page-5" data-chapter="5">
+  <h2>Chapter 5 — Why She’s My Everything</h2>
+  <p>She is beautiful, yes , more beautiful than I could ever capture with words. But she is also strong. Strong in ways that inspire me, strong in ways that make me admire her endlessly. She is mature, caring, funny, and honest.</p>
+  <p>She makes me feel safe. She makes me feel wanted. She makes me feel like maybe I am worth something after all.</p>
+  <p>Her hair, her lips, her eyes , they take my breath away. But it’s her heart, her mind, her soul that I am truly in love with. With her, I don’t just feel like I’m living. I feel like I’m alive."</p>
+</article>
+
+<!-- Chapter 6 — Proposal -->
+<article class="page page-6 final proposal-page" data-chapter="6">
+  <div class="letter-content">
+    <p class="intro-line">My dearest love,</p>
+    <p>
+      And now, here we are, on the most important page of this storybook. All the chapters we’ve written together have led us to this moment.
+    </p>
+    <p>
+      I don’t know what the future will bring. I don’t know where life will take us. But I do know one thing with absolute certainty: I want you in my story. I want you in my forever.
+So here, with all the love I have in me, I ask you:
+    </p>
+    <p class="proposal-line">¿Quieres escribir este capítulo conmigo? 💖 Will you be my girlfriend, mi amor?</p>
+
+    <div class="signature">
+      <p>With all my heart,</p>
+      <p><span class="sig">Yours always ♡</span></p>
+ 
+</article>
+
+
+          
+      </div>
+
+      <nav class="controls">
+        <button id="prev" class="ctrl">◀ Prev</button>
+        <button id="next" class="ctrl">Next ▶</button>
+      </nav>
+    </main>
+
+    <footer class="footer hidden"></footer>
+
+    <!-- Hidden background music -->
+    <audio id="bg-music" loop>
+      <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Page flip sound -->
+    <audio id="flip-sound">
+      <source src="flip.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
